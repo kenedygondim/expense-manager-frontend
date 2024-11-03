@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de produtos</title>
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+    <nav>
+        <a href="./index.html">
+            <img src="../assets/painel-de-controle.png" alt="">
+        </a>
+        <a href="list.html">
+            <img src="../assets/lista-de-controle.png" alt="">
+        </a>
+        <a href="addFile.html">
+            <img src="../assets/adicionar-ficheiro.png" alt="">
+        </a>
+    </nav>
+    <main>
+        <div id="div-search">
+            <form>
+                <input id="campoPesquisa" type="text" name="query" placeholder="Digite sua pesquisa...">
+            </form>
+        </div>
+        <div id="div-header">
+            <h1 >Compras</h1>
+            <div id="div-filtros">
+                <div id="div-numero-elementos">
+                    <p>Mostrando</p>
+                    <select name="items-per-page" id="items-per-page">
+                        <option value="5">5</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                        <option value="50">50</option>
+                    </select>    
+                </div>
+
+                <div id="div-ordenacao">
+                    <p>Ordenar por</p>
+                    <select name="sort-by" id="sort-by">
+                        <option value="date">Data</option>
+                        <option value="price">Preço</option>
+                        <option value="name">Nome</option>
+                    </select>
+                </div>    
+            </div>
+        </div>
+        <div id="div-table-container">
+        <table id="table">
+            <thead id="thead">
+                <tr>
+                    <th>Produto</th>
+                    <th>Valor pago</th>
+                    <th>Impostos</th>
+                    <th>Data</th>
+                    <th>Vendido por</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Aqui ficam os dados vindos do back-end -->
+            </tbody>
+        </table>
+        </div>
+        <div id="pagination-controls">
+            <img id="next" onclick="prevPage()" src="../assets/anterior-seta.png" alt="Botão para página anterior"></button>
+            <span id="page-info"></span>
+            <img id="next" onclick="nextPage()" src="../assets/proximo-seta.png" alt="Botão para próxima página"></button>
+        </div>
+    </main>
+    <script src="../js/list.js"></script>
+</body>
+</html>

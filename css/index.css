@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tauri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tauri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tauri&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: max-content;
+    background-color: #370062;
+    display: flex;
+}
+
+nav {
+    height: 100vh;
+    width: 5%;
+    background-color: #370062;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav a {
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+    background-color: #dbdbdb;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    border-radius: 2em 0 0 2em;
+}
+
+#left-section {
+    height: 100vh;
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#div-chart {
+    height: 40%;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d3d1dd;
+    border-radius: 1em;
+}
+
+#div-biggPurchase {
+    height: 25%;
+    width: 75%;
+    display: flex;
+    background-color: #2D2A3B;
+    border-radius: 1em;
+    flex-direction: column;
+    align-items: center;
+}
+
+#div-title-biggPurchase {
+    width: 90%;
+}
+
+#title-biggPurchase {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding-top: 0.4em;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Tauri", serif;
+    font-weight: normal;
+
+}
+
+#div-biggPurchase div {
+    display: flex;
+    padding-top: 0.3em;
+}
+
+#type {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#type p {
+    width: 30%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+#right-section {
+    height: 85vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-right-section {
+    height: 26%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    background-color: #370062;
+    border-radius: 1em;
+}
+
+.div-right-section-text {
+    font-family: 'Tauri';
+    color: #FFFFFF;
+    font-size: 1.5em;
+
+}
+
+.div-right-section-values{
+    font-family: 'JetBrains Mono';
+    color: #FFFFFF;
+    font-size: 3em;
+}
+
+#div-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8em;
+}
+
+.product {
+    font-size: 1em;
+    width: 90%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product p {
+    width: 30%;
+    text-align: center;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: lighter;
+}
+
